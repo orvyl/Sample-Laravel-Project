@@ -33,6 +33,10 @@ Route::post('/',function(){
 });*/
 /*END: Comming soon login*/
 
+Route::get('fudge', 'FacebookController@fbcheck');
+
+Route::get('fblogin', 'FacebookController@fbregistration');
+
 Route::get('/', 'HomeController@index');
 Route::post('add-newsletter','HomeController@addEmailNewsletter');
 

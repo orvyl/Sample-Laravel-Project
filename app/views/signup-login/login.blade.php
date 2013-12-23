@@ -28,7 +28,7 @@
 							<a href="{{ URL::to('signup') }}">create an account</a>
 						</li>
 						<li class="forgot-link fr">
-							<a href="{{ URL::to('login/forgotpassword') }}">
+							<a href="{{ URL::to('fblogin') }}">
 								<img src="{{ URL::to('/') }}/images/fb/login_btn.png" />
 							</a>
 						</li>
