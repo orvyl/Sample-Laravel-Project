@@ -1,0 +1,142 @@
+.dd {
+	text-align:left;
+	font-size:14px;
+	color:#55aba8;
+	border-radius:5px; 
+	border:1px solid #4c9a97;
+	background:#e1f2f6;
+	box-shadow:inset 0px 0px 7px #ccc; 
+}
+.dd .ddTitle {
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:30px;
+}
+.dd .ddTitle span.arrow {
+	position:relative; 
+	top:1px;
+	right:1px; 
+	float:right; 
+	display:inline-block; 
+	width:25px;
+	height:30px;
+	background:url('../images/page_template/select_box.png') no-repeat center !important; 
+	cursor:pointer; 
+}
+
+.dd .ddTitle span.ddTitleText { display:block; text-indent:1px; overflow:hidden; padding:3px;}
+.dd .ddTitle span.ddTitleText img{text-align:left; padding:0 2px 0 0}
+.dd .ddTitle img.selected {
+	padding:0 3px 0 0;
+	vertical-align:top;
+}
+.dd .ddChild {
+	border:1px solid #4c9a97;
+	position:absolute;
+	display:none;
+	margin:0;
+	width:auto;
+	height: auto !important;
+	background:#e1f2f6; 
+	border-radius:5px; 
+}
+.dd .ddChild .opta a, .dd .ddChild .opta a:visited {padding-left:10px}
+.dd .ddChild a {
+	display:block;
+	padding:5px; 
+	text-decoration:none;
+	color:#6e6e6e;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd .ddChild a:hover {
+	background-color:#fafafa;	
+	color:#383838;
+}
+.dd .ddChild a img {
+	border:0;
+	padding:0 2px 0 0;
+	vertical-align:middle;
+}
+.dd .ddChild a:first-child { border-top-left-radius:10px; border-top-right-radius:10px; }
+.dd .ddChild a:last-child { border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+
+.dd .ddChild a.selected {
+	background-color:#fafafa;	
+	color:#383838;
+}
+.hidden {display:none;}
+
+/*** dd2 ***/
+.dd2 {
+	text-align:left;
+	font-size:14px;
+	color:#55aba8;
+	border-radius:5px; 
+	border:1px solid #4c9a97;
+	background:#cae9f0;
+	box-shadow:inset 0px 3px 8px #b1cfd7;
+}
+.dd2 .ddTitle {
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:30px;
+}
+.dd2 .ddTitle span.arrow {
+	position:relative; 
+	top:1px;
+	right:1px; 
+	float:right; 
+	display:inline-block; 
+	width:25px;
+	height:30px;
+	background:url('../images/page_template/select_box.png') no-repeat center !important; 
+	cursor:pointer; 
+}
+
+.dd2 .ddTitle span.ddTitleText { display:block; text-indent:1px; overflow:hidden; padding:3px;}
+.dd2 .ddTitle span.ddTitleText img{text-align:left; padding:0 2px 0 0}
+.dd2 .ddTitle img.selected {
+	padding:0 3px 0 0;
+	vertical-align:top;
+}
+.dd2 .ddChild {
+	border:1px solid #4c9a97;
+	position:absolute;
+	display:none;
+	margin:0;
+	width:auto;
+	height: 150px !important;
+	background:#e1f2f6; 
+	border-radius:5px; 
+	overflow: auto;
+}
+.dd2 .ddChild .opta a, .dd2 .ddChild .opta a:visited {padding-left:10px}
+.dd2 .ddChild a {
+	display:block;
+	padding:5px; 
+	text-decoration:none;
+	color:#6e6e6e;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd2 .ddChild a:hover {
+	background-color:#fafafa;	
+	color:#383838;
+}
+.dd2 .ddChild a img {
+	border:0;
+	padding:0 2px 0 0;
+	vertical-align:middle;
+}
+.dd2 .ddChild a:first-child { border-top-left-radius:10px; border-top-right-radius:10px; }
+.dd2 .ddChild a:last-child { border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+
+.dd2 .ddChild a.selected {
+	background-color:#fafafa;	
+	color:#383838;
+}

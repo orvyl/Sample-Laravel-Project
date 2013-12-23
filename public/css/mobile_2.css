@@ -1,0 +1,178 @@
+@media only screen and (max-width: 600px), only screen and (max-device-width : 600px) {
+	html { border-top:5px solid blue;}
+	
+	.user-control { margin:80px 0px 10px 0;}
+	.logo { z-index:1;}
+	.header-content { position:relative; z-index:3;}
+	.header-top-line  {left:0px;}
+	.menu { float:none !important; padding:0px;}
+	.menu ul { text-align:center !important;}
+	.menu ul li { float:none !important; display:inline-block;}
+	.header-content { width:100%;}
+	.user-search { width:85%;} 
+
+	.menu ul li { margin:0px 10px; }
+	.menu ul li a { padding:6px 7px; }
+	
+	.gifts-form label { text-align:left;}
+	.gifts-form input[type="text"],.gifts-form input[type="email"], .gifts-form input[type="password"], .gifts-form textarea { float:none !important; width:98%;}
+	.contact-us-pic input[type="submit"] { display:none;}
+	.send-input { display:block;}
+	.send-input input[type="submit"] { font-size:25px; font-family:'lobster'; color:#fff; background:#ffab86; padding:3px 20px; margin:5px 0; border-radius:10px; border:none;}
+	.header-content { border-bottom-left-radius:20px;}
+	.user-s-inner { width:100% !important;}
+	
+	/*** HELP ***/
+	.help-right { width:55%;} 	
+	.home-carousel,.home-banner { display:none;}
+	
+	/*** CREATE REGISTRY ***/
+	.sign-up-field label { width:40% !important;}
+	.sign-up-field input[type="text"], .sign-up-field input[type="password"],.sign-up-field input[type="email"] { width:52%;}	
+	.c-r-select { width:55% !important;}
+	.forgot-link  { float:none !important; width:auto;}
+	.forgot-link a {  float:none !important; display:inline-block; vertical-align:top;}
+	
+	/*** SUPPLIER ***/
+	.suppliers-img img { width:100%; height:auto;}
+		
+	/*** Gift Registry ***/
+	.g-r-text-info { float:none !important; width:auto;}
+	.view-girl  { float:none !important; width:auto; margin:0 auto;}
+	.girl { display:none;}
+	.v-submit input[type="submit"] { position:absolute !important; top:46px; right:-1px;}
+	.view-field { float:none !important; width:auto;}
+	.view-field input[type="text"] { width:85% !important;}
+	
+	/*** GIFT CERTIFICATE PAY ***/	
+	.registry-setup-field table tr td:nth-child(1) { width:20% !important;}
+	.g-r-info { width:auto;}
+	
+	/*** SHOP ***/
+	.giftboxes-left { float:none !important; width:auto;}
+	.shop-listing-right { float:none !important; width:auto;}	
+	.home-price-range input[type="submit"] { right:0px !important;}
+	.ps-right { width:37%;}
+	.ps-right p { width:auto;}
+	.p2-left  { width:43%;}
+	.p2-left p { font-size:16px;}
+	.pay-btn { float:right !important; margin:10px 60px;}	
+	.p-4-right-bottom1{ width:85%; }
+	.my-accont-mobile { width:100%;}	
+	.my-account-order  { float:none !important; width:auto;}
+	
+	
+	/*** CART ***/
+	.cart table { display:none;}
+	.cart-content-mobile { display:block; background:#7bc7da; padding:10px;}
+	.cart-content-mobile h2 { font-size:15px; font-family:'Kalinga'; font-weight:normal; color:#fff;}
+	.cart-product-img span {display:block; font-size:13px; color:#3b3b3b; cursor:pointer;  }
+	.cart-mobile-content label { float:left; }
+	.cart-mobile-content { width:auto;}
+	.cart-product-img { margin-right:10px;}
+	.cart-mobile-select { margin-left:5px;}
+	.product-review-right  { float:none !important; width:auto;}
+	.product-review-slider { float:none !important; width:auto; margin:0 auto; text-align:center;} 
+	.people { position:relative; top:40px; left:40px;}
+	.people { width:249px;}
+	.make-payment { position:absolute; top:200px; left:100px;}
+	
+	.how-it-works { background-size:100%;}
+	.present-img { background-size:100%;}
+	
+	/*** WROKS ***/
+	.bottom-img { left:115px;}
+	.content-gifts2 { right:92px;}
+	.content-gifts { left:117px;} 
+	.content-gifts1 { right:42%;}
+	
+	.pay-reg-mobile table tr td:first-child { width:auto !important;}
+	.pay-reg-mobile table tr td:last-child { width:25% !important;}
+	
+	.menu { width:100% !important;} 
+	.menu-sub { width:400px !important; right:-100px !important; border-radius:5px;}
+	
+	
+	
+	.blog-listing { width:58%;}
+
+
+	/***wishing well***/
+	.registry-setup-container { padding-left:18px; }
+	.w-well-container { width:72%; padding:20px; }
+	.img-c { width:100%; }
+	.img-c img { width:100%; }
+	.add-image { width:26% !important; display:block !important; margin-bottom:10px; }
+	
+	/***registry setup***/
+	.registry-setup-container ul li textarea { width:98%;; }
+	.registry-setup-container ul li input[type="text"] { width:98%; }
+	
+	.img-container { width:120px; }
+	.img-container img { width:100%; }
+	.item-tab-right { display:none !important; }
+	
+	.item-tab-left { width:90%; }
+	.r-s-remove { display:block; }
+	.r-s-remove a { font-family:'Helvetica'; font-size:12px; color:#3b3b3b; }
+	.label-hide { display:block; }
+	.item-tab .gift-btn { bottom:0px; }
+	
+	
+	/***add payer***/
+	.add-mobile-left img { width:100%; }
+	.main-discr { width:64%; }
+	.add-img-c-mobile { width:100%; }
+	.add-img-c-mobile img { width:100%; }
+	
+	.payer-dead-line #gift-3 { width:130px !important; }
+	.payer-dead-line #gift-4 { width:60px !important; }
+	.payer-dead-line #gift-5 { width:130px !important; }
+	
+	/***cart***/
+	.cart-voucher { padding:15px; }
+	.cart-voucher ul { text-align:left; }
+	.cart-voucher ul li input[type="text"]{ width:100%; }
+	.cart-voucher ul li { width:92%; padding:0px; !important; }
+	.cart-voucher ul li a { width:100%; padding:5px 4px; }
+	.subtotal { width:45%; }
+	.subtotal p { width:50%; text-align:left; }
+	
+	.add-payer-content .payer-dead-line #gift-9 { width:130px !important; }
+	.add-payer-content .payer-dead-line #gift-10 { width:60px !important; }
+	.add-payer-content .payer-dead-line #gift-11 { width:130px !important; }
+	
+	/***product***/
+	.product-review-right { float:none !important; clear:both !important; width:95% !important; padding:20px 5px; }
+	.product-review-slider { width:99%; margin-bottom:20px; }
+	#product-tabs { width:100%; }
+	.product-details-p { float:none !important; clear:both !important; }
+	.p-d-location { width:71%; }
+	.product-review-right .gift-price { margin:0px !important; }
+	.product-review-right h4 { font-size:15px; }
+	
+	/***detail page***/
+	.detail-slider { width:200px; }
+	.progress-bar { width:100%; }
+	.detail-price-top { float:none !important; clear:both !important; }
+	.d-t-p-btn { float:none !important; clear:both !important; }
+	.product-ratings { width:90%; }
+	
+	/***contributors***/
+	..contributors ul li:last-child { margin-left:10px; }
+	.giftboxes h1 { line-height:normal; }
+	
+	.c-mobile-email span { margin-left:1px; }
+	
+	/***login-main***/
+	.login-main { width:90%; }
+	.login-main-form { width:80%; }
+	.login-main-form ul li input[type="text"]{ width:96%; }
+}
+@media only screen and (max-width: 515px), only screen and (max-device-width : 515px) { 
+	.menu ul li { margin:0px 4px !important; }
+}
+
+@media only screen and (max-width: 500px), only screen and (max-device-width : 500px) { 
+	.menu ul li { margin:0px 0px !important; }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "orvyl/paypal",
+    "description": "",
+    "authors": [
+        {
+            "name": "orvyl",
+            "email": "orvyl.t@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Orvyl\\Paypal\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

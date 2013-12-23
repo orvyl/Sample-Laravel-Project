@@ -1,0 +1,225 @@
+@media only screen and (max-width: 950px), only screen and (max-device-width : 950px) {
+	html {  border-top:5px solid #096b9e;}
+	
+	
+	
+	/*** HOME ***/
+	.menu { width:96%;}
+	.menu ul { text-align:center;}
+	.menu ul li { display:inline-block !important; float:none; margin:0px 20px;}
+	.menu ul li a { padding:6px 10px;}
+	.user-search { width:82%;} 
+	.user-search p { float:none !important;} 
+	.user-s-inner { float:right; width:89% !important;}
+	.search-d { display:none;}
+	.search-tablet { display:block;}
+	.header-content { width:84%; min-height:95px; }
+	
+	.search { text-align:right;}
+	.checkout { float:none !important; display:inline-block; vertical-align:middle;}
+	.search-tablet { float:none !important; display:inline-block; vertical-align:middle; text-align:left;}
+	.shopping-cart a span { margin:22px 12px;}
+	.shop-basket { top:16px; left:-33px;}
+	
+	#footer-wrapper { text-align:center;}
+	#footer-wrapper p { float:none !important; display:inline-block; vertical-align:top; padding:5px 0;}
+	.footer-links { float:none !important; display:inline-block; vertical-align:top;}
+	.home-price-range input[type="submit"] { right:-19px !important;}
+	
+	.product-mobile-nav { width:327px;}	
+	
+	/*** CONTACT US ***/
+	.contact-us { width:90%; margin:0 auto;}
+	.send-pic { right:0px;}
+	.gifts-form textarea { width:70%;}
+	.contact-us-inner { width:auto;}
+	
+	/*** HELP ***/
+	.group-gifts { width:96%; padding:2%;}
+	.help { width:auto;}
+	
+	.help-left { width:30%;}
+	.help-right { width:62%;}
+	
+	/*** GIFT CERTIFICATE ***/
+	.gift { width:auto !important;}
+	.gift-inner ul li { margin:10px;}
+	
+	/*** FOUNDER ***/
+	.founder-inner-container { width:auto; margin-bottom:40px;}
+	.founder-holder { }
+	.founder-left,.founder-bottom { display:none; width:auto; background-size:100%;}
+	.founder-mid { width:80%; padding:20px 35px; border-radius:15px; }
+	.founder-right { position:absolute; right:60px; top:0px;} 
+	.founder-holder {  width:74%;}
+	
+	/*** ABOUT US ***/
+	.about-us { width:auto;}
+	.gift1 { right:0px; bottom:-138px;}
+	.about-us { padding:20px 20px 20px 40px !important;}
+	
+	/*** BLOG ***/
+	.blog-right { width:53%;}
+	.blog-pic-holder  { width:100%; height:auto;}
+	.blog-pic-holder img { width:100%; height:auto;}
+	
+	/*** FORGOT PASSWORD ***/
+	.forgot { width:90%; margin:0 auto;}
+	.gifts-form input[type="text"], .gifts-form input[type="password"], .gifts-form textarea { float:left !important; width:60%; }
+	
+	/*** SIGN UP ***/
+	.sign-up { width:96%; margin:0 auto;}
+	.sign-up-btn input { right:-8px;}
+	.last-field { width:60%}
+	
+	/*** GIFT REGISTRY ***/
+	.gift-r-container { width:96%; padding:2%;}
+	.gift-r-c { width:auto !important;}
+	.g-r-text-info {  width:40%;} 
+	.g-r-c-inner { width:100%; margin:0 auto;}
+	.view-girl { width:50%;}
+	 
+	.registry-setup-field table tr td:first-child { width:50% !important;}
+	
+	/*** SHOP ***/
+	.shop-listing-right { width:70%;}
+	.giftboxes-text { float:none !important; width:auto; clear:both; margin:5px 0px}	
+	.mobile-price { display:block;}
+	.desktop-price { display:none;}
+	
+	
+	/*** PAYMENT ***/
+	.p-1-inner-right { width:auto;}
+	.p-1-inner-right input[type="text"] { width:100%;}
+	.p-1-input-1 { width:45% !important;}
+	.p-1-input-1 input[type"text"] { width:30% !important;}
+	
+	.p2-left { width:50%; margin: 0 auto;}
+	.pay-btn { float:right !important; margin:10px 120px;}
+	
+	/*** GIFT REGISTRY ***/
+	 .registry-setup-field input[type="text"],.registry-setup-field textarea { width:98%;}
+	 .registry-setup-field label { text-align:left !important;}
+	 .g-r-info { width:auto !important; margin:0px;}
+	 
+	 .payment-3-right-holder { width:50%;}
+	 .payment-3-left-holder { width:45%;}
+	 .p-3-card-type { width:auto;}
+	 .p-3-card-type label {display:block; text-align:left !important;}
+	 .p-3-card-type input[type="text"] { width:96%; display:block;}
+	 .p-3-card-type .dd { float:none !important; display:block; width:99% !important; margin:20px 0 10px 0; }
+	 .p-3-select { width:100%;}
+	 
+	 .p-4-continue { width:185px; margin:0 auto; float:none !important; }
+	 .p-4-right-bottom1{ width:92%; }
+	 .p-4-right-bottom1 .dd { width:100% !important; }
+	 
+	 .my-account-info input[type="text"], .my-account-info input[type="password"] { width:61%;}
+	 .my-accont-mobile { width:70%;}
+	 .my-account-info { width:auto;}
+	 
+	 .r-c-select { width:64% !important;}
+	 .r-c-select1 { width:30% !important;}
+	 .my-account-info .dd2 { width:100% !important;}
+	 .date-event { width:55% !important;}
+	 
+	 .cart { width:auto;}
+	 .cart table { width:100%;}
+	 .c-f-content ul li { width:48%;}
+	 .c-f-content input[type="text"] { width:70%;}	
+	.cart-des { width:35%;} 
+	
+	/*** PRODUCT ***/
+	.giftboxes-left { float:none !important; width:auto;}
+	.product-right  { float:none !important; width:auto;}
+	.product-review-right { }
+	
+	
+	/*** WORKS ***/
+	.works-bg { position:relative;}
+	.present { position:relative; left:206px;}
+	.people { position:relative; top:100px; left:320px;}
+	.make-payment { position:absolute; top:350px; left:200px;} 
+	.create-registry { width:600px; margin:0 auto;}	
+	.gift-boxes-mobile { width:24%; float:left !important;}
+	
+	
+	.product-m-mobile { float:left !important; width:40% !important;} 
+	/*.slider-desktop { display:none;}
+	*/
+	.product-right { float:none !important; width:auto !important; clear:right; }
+	.product-review-right { width:100% !important;}  
+	
+	.slider-desktop { margin-left:50px;}
+	
+	.blog-listing { width:57%;}
+	.blog-listing-img img { width:100%; height:auto;}
+	
+/*REENDYL*/
+
+/***add gift***/
+	.line-trought-text { display:none; }
+	.add-to-registry { float:right; width:40%; }
+	
+	/***add payer***/
+	.add-payer-top .fr label { width:105px; font-size:14px; }
+	.add-payer-tab1 ul li { width:105px; }
+	.add-img-c img { width:80%; height:100% }
+	
+	/***create wishing well***/
+	.wishing-well ul li input[type="text"]{ width:66%; }
+	.wishing-well ul li textarea{ width:66%; }
+	
+	/***wishing well details***/
+	.wishing-well-details { width:90%; }
+	.w-details-info { width:95%; }
+	.w-d-content { width:100%; }
+	.wish-img-info h3 { padding-bottom:0px; }
+	.amount-padding { padding-bottom:15px !important; }
+	
+	 /***registry setup***/
+	.registry-setup-container ul li input[type="text"] { width:71.5%; }
+	.registry-setup-container ul li textarea { width:71.5%; }
+	.item-top { padding-left:20px; }
+	.item-text { width:58%; }
+	.item-tab-left { width:68%; padding-left:20px; }
+	.item-tab-right { width:24%; }
+	.item-tab-right label { width:40%; margin-left:10px; }
+	
+	/***add gift***/
+	.m-d-add-btn { display:none; }
+	
+	/***cart***/
+	.cart-voucher { width:55%; }
+	.add-payer-fields ul li input[type="text"] { width:68%; }
+	
+	
+	/***detail-page***/
+	.d-t-p-btn { width:120px; }
+	.detail-price-top { width:52%; }
+	
+	/***contributors***/
+	..contributors ul li { margin:0px 10px; }
+	..contributors ul li:last-child { margin-left:50px; }
+	.contributors-name { width:290px; }
+	.contributors-delete { margin-left:20px; }
+	
+	/***gift-list***/
+	.gift-list-container ul li { padding-left:20px; padding-right:20px; }
+	.g-l-r-price ul li:last-child label span { font-size:20px; }
+	.g-l-r-price ul li label span { font-family:20px; }
+	.gift-list-left.fl { width:100%; }
+	.g-l-l-text.fr { width:70%; }
+}	
+
+@media only screen and (max-width: 775px), only screen and (max-device-width : 775px) { 
+	.menu ul li { margin:6px 7px; }
+}
+
+@media only screen and (max-width: 865px), only screen and (max-device-width : 865px) { 
+	.menu ul li { margin:0px 15px; }
+}
+
+@media only screen and (max-width: 780px), only screen and (max-device-width : 780px) { 
+	.menu ul li { margin:0px 8px; }
+}

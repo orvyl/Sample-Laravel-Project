@@ -1,0 +1,247 @@
+@media only screen and (max-width: 736px), only screen and (max-device-width : 736px) {
+	html {  border-top:5px solid red;}
+	/*** HOME ***/
+	.menu ul li { margin:0px 6px;}
+	.menu ul li a { padding:6px 7px;}
+	.search input[type="text"] { width:161px;}
+	.header-content { width:95%;}
+	.mobile-listing { display:none !important;}
+	.newsletter-logo { display:none;}
+	.newsletter { float:none; width:auto; padding:10px; margin:0px; text-align:left; border-radius:30px 30px 0 0  !important;}
+	.subcription-m { width:auto;}
+	.bottom-tabs ul li { width:auto;}
+	
+	.bottom-tab-content { display:none; width:97%; margin:0 10px !important;}
+	.mobile-view-home { display:block !important;}
+	.mobile-view-home ul { width:96%; margin:0 auto; padding:2%; padding:0px !important;}
+	.mobile-view-home ul li { background:#7bc7da; margin:10px 0;   padding:10px; border-radius:5px; border:1px solid #76afbe; cursor:pointer;}
+	.mobile-view-home p { font-size:19px; font-family:''; font-weight:bold; color:#fff; text-shadow:1px 1px 1px #63a0af;}
+	
+	.bottom-tab-content ul  {  padding:0px !important; margin:0px;}
+	.bottom-tab-content ul li { border:none !important; padding:0px !important;}
+	
+	.map { width:275px !important; height:247px !important; margin:0 auto !important; background:url('../images/home/map.png') no-repeat center !important;}
+	.home-price-range input[type="submit"] { right:0px; bottom:-20px;}
+	
+	.contact-form { width:auto;}
+	.gifts-form input[type="text"], .gifts-form input[type="password"] { width:70%;}
+	
+	/*** FOUNDER ***/
+	.founder-inner-container { width:auto;}
+	.founder-holder { width:auto;}
+	.founder-left,.founder-bottom { display:none; width:auto; background-size:100%;}
+	.founder-mid { width:auto; margin:0 auto; padding:20px 35px; border-radius:15px;}
+	.founder-right { float:none !important; position:relative; top:0px; right:0px;}
+	.founder-holder { float:none !important;}
+	.founder-right { display:none;}
+	.mobile-profile { display:block; clear:both; margin:-22px -42px 0 0;}
+	
+	/*** BLOG ***/
+	.blog-left { width:40%; float:none !important;}
+	.giftboxes-left { width:auto;}	
+	.blog-right  { float:none !important; width:auto;}
+	
+	/*** GIFT REGISTRY Mirrage ***/
+	.sign-up { width:96%; padding:2%;}
+	.sign-up-field input[type="text"], .sign-up-field input[type="password"],.sign-up-field input[type="email"] { width:54%;}	
+	.c-r-select { width:56% !important;}
+	.c-r-select1 { float:left !important; width:25% !important;}
+	.date-event { width:55%;}
+	
+	.create-registry ul li .dd2 { width:100% !important;}
+	.r-c-checkcox label { width:auto;}
+	.checkbox-label  { width:100% !important;}
+	.checkbox-label label { width:100% !important;}
+	
+	/*** FORGOT PASSWORD ***/
+	.gifts-form input[type="text"],.gifts-form input[type="email"], .gifts-form input[type="password"], .gifts-form textarea { float:left !important; width:70%; }
+	.send-pic { display:none;}	
+	.submit-button input[type="submit"]{ display:block; font-size:22px; font-family:'lobster'; font-weight:normal; color:#fff; background:#ffab86; padding:2px 20px; margin:10px 8px; border:none; border-radius:10px; text-align:center;}
+	.gifts-form { width:auto;} 
+	
+	/*** SUPPLIER ***/
+	.suppliers-img { margin:0px;}
+	
+	/*** SIGN UP ***/
+	.sign-up-btn input[type="submit"]{ display:none;}
+	.submit-sign-up input[type="submit"]{ display:block;}
+	.last-field { width:54%;}
+	
+	/*** GIFT CERTIFICATE PAY ***/	
+	.registry-setup-field table tr td:nth-child(2) { }
+	
+	/*** SHOP ***/
+	.shop-listing-right	{ width:57%;}
+	.result-text { float:none !important; text-align:left;}
+	.giftboxes-left { width:35%;}
+	
+	.ps-right { width:36%;}
+	.p2-left { width:45%; margin:0 auto;}
+	.ps-right p { text-align:left !important;}
+	.gift-registry-step2 { display:none;}
+	
+	.gift-registry-mobile { display:block;}
+	.gift-registry-mobile p { font-size:14px; font-family:'Kalinga'; color:#fff;}
+	.gift-registry-mobile-s2 { background:#7bc7da; padding:5px; border-radius:5px;}
+	
+	.registry-img { margin-right:10px;}
+	.registry-info-mobile h3 { font-size:14px; font-family:'Kalinga'; font-weight:bold; color:#fff;}
+	.registry-info-mobile p { font-family:'Kalinga'; color:#3b3b3b;}
+	.remove-mobile { font-size:14px; color:#3b3b3b; cursor:pointer;}
+	.remove-mobile span { color:#6f0000;}
+	
+	.gift-registry-mobile ul li { margin:10px 0; }
+	
+	.p-3-right-last,.paypal-content { width:auto;}
+	
+	.my-accont-mobile { width:60%;}
+	.my-account-info input[type="text"], .my-account-info input[type="password"] { width:96%; float:none !important;}
+	.my-account-info label { text-align:none !important; display:block; width:auto;}	 
+	.my-account-order { width:60%; }
+	
+	.c-f-content ul li { width:100%;}
+	.c-f-content input[type="text"] { width:80%;}
+	
+	/*** CART ***/
+	.cart table td{ display:table-cell; vertical-align:top;}
+	.cart-des h3 { font-size:13px;}
+	.cart-img img { width:100%; height:auto;}
+	.cart td { padding:10px 5px;}
+	.product-review-right { width:47%;}
+	
+	/*** HOW IT WORKS ***/
+	.help h5 { font-size:15px; font-weight:normal; color:#fff;}
+	.present { position:relative; top:0px; left:140px; width:149px;}
+	.people { position:relative; top:100px; left:200px;}
+	.works-bg p { font-size:15px;}
+	.works-bg p span { font-size:18px;}
+	.make-payment { position:absolute; top:250px; left:100px;} 
+	
+	/*** BLOG ***/
+	.blog-left-mobile { width:auto;}
+	.blog-box-mobile { width:auto !important;}
+	.create-registry { width:auto; margin:0 2%;}  
+	
+	.gift-registry table td{ display:table-cell; vertical-align:top;}
+	.pay-reg-mobile table tr td:first-child { width:auto !important;}
+	.pay-reg-mobile table tr td:last-child { width:25% !important;}
+	
+	.g-r-img  { width:100%; height:auto; }
+	.g-r-img img { width:100%; height:auto; }
+	
+	
+	.menu { width:80%;} 
+	.slider-desktop { float:right !important;}
+	.product-mobile-nav { width:auto !important;}
+	.slider-desktop { margin:0px !important;}
+	
+	.menu-sub { width:350px !important;}
+	
+	.blog-listing { width:70%;}
+
+	/*REENDYL*/
+
+	/***create wishing well***/
+	.wishing-well-container { width:75%; margin:0 auto; }
+	.wishing-well ul li label { display:block; width:auto; text-align:left; padding-bottom:5px; }
+	.wishing-well ul li input[type="text"]{ width:96%; margin-left:0px; }
+	.wishing-well ul li textarea{ width:96%; margin-left:0px; }
+	.wishing-add-image { margin-left:0px; }
+	.wishing-add-image label { display:inline-block !important; }
+	.amount-content { margin-left:0px !important; }
+	.amount { display:inline-block !important; }
+	
+	
+	/***wishing well***/
+	.w-well-container { width:74%; }
+	.registry-setup-container ul li input[type="text"]{ width:90%; }
+	.registry-setup-container ul li textarea { width:90%; }
+	.item-text { width:47%; margin-left:10px; }
+	.item-text h3 { font-size:14px !important; }
+	.discrp { display:none !important; }
+	
+	
+	/***add payer***/
+	
+	.add-payer-top { display:none; }
+	.add-to-registry { width:55%; }
+	.m-d-add-btn { display:block; }
+	.m-h-add-btn { display:none; }
+	.main-discr { width:65%; }
+	.main-discr .add-img-c-mobile img { width:100%; }
+	.add-mobile-left { width:31%; }
+	.add-mobile-left img { width:158px; }
+	.break-down1 { margin-top:15px; }
+	.break-down1 a { background-position-y:50%; }
+	.add-payer-tab1 ul { display:none; }
+	.add-tab-mobile-container { display:block !important; }
+	.add-payer-fields ul li { position:relative; }
+	.add-payer-fields ul li a { display:inline-block !important; }
+	.add-payer-fields ul li label { display:block; }
+	.add-payer-fields ul li input[type="text"]{ float:left; text-align:left; width:80%; }
+	.add-payer-fields ul li a { display:inline-block; vertical-align:top; padding-left:20px !important; }
+	.add-payer-fields ul:nth-child(2) a { padding-left:0px !important; }
+	.mobile-btn-btm { margin-left:0px !important; }
+	.payer-dead-line { padding:20px; }
+	.payer-dead-line ul { margin-left:0px; }
+	.payer-dead-line ul li:first-child { display:block; }
+	
+	.payer-dead-line #gift-3 { width:140px !important; }
+	.payer-dead-line #gift-4 { width:60px !important; }
+	.payer-dead-line #gift-5 { width:130px !important; }
+	
+	/***cart***/
+	.cart-img-left { display:none; }
+	.cart-voucher { width:44%; }
+	.subtotal p { width:40%; }
+	
+	/***product-details***/
+	.p-d-location { width:60%; }
+	
+	/*****/
+	.mobile-itp { display:none !important; }
+	
+	/***detail page***/
+	
+	.product-ratings { width:65%; margin-left:0px; }
+	.progress-bar { width:98%; }
+	.d-t-p-btn { display:block; float:none !important; clear:both !important; margin:0 auto !important; }
+	.detail-price-top { display:block !important; float:none !important; clear:both !important; width:100%; }
+	
+	/***contributors***/
+	.hide-in-mobile { display:none !important; }
+	.c-mobile-email { display:block; padding-bottom:15px !important; }
+	..contributors ul li p { width:100%; text-align:left; padding-bottom:0px; }
+	..contributors ul li a { padding-bottom: 40px; }
+	.contributors-name { display:block; width:90%; }
+	.contributors-name label {  }
+	.contributors-name span { width:70%; word-wrap:break-word !important; }
+	.contributors-delete { position:absolute; top:0px; right:0px; }
+	.contributors ul { width:90%; margin:0 auto; }
+	.contributors ul li { position:relative; }
+	
+	.g-l-l-text.fr { margin-top:15px; margin-left:0px; width:90%; }
+	.tablet-gift-l { display:none; }
+	..gift-list-right.fr { display:block; float:left !important; margin-top:20px; }
+	.g-l-l-img.fl { margin-right:15px; }
+	.g-l-l-text p { width:100%; }
+	.g-l-l-img.fl { float:none !important; clear:both !important; margin:0 auto; }
+	.gift-list-right.fr { display:block; float:none !important; clear:both; margin:0 auto 0; }
+	.g-l-l-text.fr { margin-bottom:20px; }
+	
+}
+
+@media only screen and (max-width: 682px), only screen and (max-device-width : 682px) {
+	.menu { width:76%; }
+	.menu ul li { margin:0px 4px; }
+	.menu ul li a { padding:6px 4px; }
+}
+@media only screen and (max-width: 617px), only screen and (max-device-width : 617px) {
+	.menu ul li { margin:0px 0px; }
+	.menu ul li a { padding:6px 4px; }
+}
+
+@media only screen and (max-width: 610px), only screen and (max-device-width : 610px) {
+	.menu ul li { margin:0px 0px !important; }
+	.menu ul li a { padding:6px 4px; }
+}
