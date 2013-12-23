@@ -33,8 +33,6 @@ Route::post('/',function(){
 });*/
 /*END: Comming soon login*/
 
-Route::get('fblogin', 'FacebookController@fbregistration');
-
 Route::get('/', 'HomeController@index');
 Route::post('add-newsletter','HomeController@addEmailNewsletter');
 
