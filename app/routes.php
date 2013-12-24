@@ -83,6 +83,8 @@ Route::group(array('prefix'=>'registry','before'=>'auth'), function(){
 
 	Route::post('check-code', 'RegistryController@checkcode');
 	Route::get('the-registry', 'RegistryController@theregistry');
+
+	Route::controller('contributors','ContributorsController');
 });
 
 Route::controller('contact-us','ContactController');

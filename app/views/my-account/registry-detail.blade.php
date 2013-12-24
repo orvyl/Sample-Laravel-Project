@@ -49,6 +49,9 @@
 				</div>
 				<p>{{ $paidInPercent }}% paid</p>
 				<p>Payment Deadline: {{ date('d M Y', strtotime($registry->party_date)) }}</p>
+				<p>
+					<a href="{{ URL::to('registry/contributors?reg='.$registry->id) }}" class="view-det-order" >[ contributors ]</a>
+				</p>
 			</div>
 		</div>
 		<div class="payment-3-right-holder payment-4 fr">

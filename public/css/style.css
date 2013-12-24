@@ -930,7 +930,10 @@ h1 { color:#fff; font-family: 'Century Schoolbook'; font-size:40px; font-weight:
 .add-contributors ul { text-align:center; margin-bottom:20px; padding:25px 0px 40px 0px; background:url('../images/page_template/line.jpg') repeat-x bottom; }
 .add-contributors ul li { display:inline-block; vertical-align:top; margin:0px 20px; }
 .add-contributors ul li input[type="text"]{ width:266px; height:22px; padding:4px; border:none; background:url('../images/page_template/input_bg.jpg') repeat-x top; bordere:1px solid #5ba5ab; border-radius:5px; }
+.add-contributors ul li input[type="email"]{ width:266px; height:22px; padding:4px; border:none; background:url('../images/page_template/input_bg.jpg') repeat-x top; bordere:1px solid #5ba5ab; border-radius:5px; }
 .add-contributors ul li a { display:block; font-family:'lobster'; font-size:27px; color:#fff; padding:0px 35px; margin: 0px !important; background:#ffab86; border-radius:10px; }
+.add-contributors ul li input[type="submit"]:hover { background:#3b3b3b !important; }
+.add-contributors ul li input[type="submit"] { display:block; font-family:'lobster'; font-size:27px; color:#fff; padding:0px 35px; margin: 0px !important; background:#ffab86; border-radius:10px; }
 .add-contributors ul li a:hover { background:#3b3b3b !important; }
 .add-contributors a { display:inline-block; font-family:'lobster'; font-size:27px; color:#fff; text-align:center; margin:0px 0px 25px 0px; padding:0px 25px; background:#ffab86; border-radius:10px; }
 .contri-cancel { margin-right:15px !important; color:#5d5d5d !important; background:#fcd977 !important; }
