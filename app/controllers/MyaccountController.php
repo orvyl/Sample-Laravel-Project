@@ -37,6 +37,7 @@ class MyaccountController extends BaseController {
 			if(Hash::check(Input::get('old_password'), Auth::user()->password))
 				$u->password = Hash::make(Input::get('password'));
 
+			$u->email = Input::get('email');
 			$u->fill(array(
 					'first_name'=>Input::get('first_name'),
 					'last_name'=>Input::get('last_name'),

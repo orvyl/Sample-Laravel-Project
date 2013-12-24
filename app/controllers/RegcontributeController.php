@@ -211,4 +211,25 @@ class RegcontributeController extends BaseController {
 				->with('content',$content->content);
 	}
 
+	public function getFbshare() {
+		$reg = Registry::find(Input::get('id'));
+		$link = URL::to('the-registry?c='.$reg->code);
+		$pic = URL::to('/').'/uploads/products/thumbnail_default.jpg';
+		$name = "Group Gifts | Registry";
+
+		if($reg->occasion_type == 'personal') {
+			$info = DB::table('registry-personal')->where('registry_id',$reg->id)->first();
+			$inf = $info->first_name.' '.$info->last_name;
+		} else {
+			$info = DB::table('registry-marriage')->where('registry_id',$reg->id)->first();
+			$inf = $info->bride_fname.' '.$info->bride_lname.' and '.$info->groom_fname.' '.$info->groom_lname;
+		}
+
+		$caption = "Gift registry for ".$inf;
+		$description = $reg->registry_title.'<br/>'.$reg->registry_welcome;
+		$goto_link = $link;
+
+		return Redirect::to(Mylibrary::fb_share($link,$pic,$name,$caption,$description,$goto_link));
+	}
+
 }

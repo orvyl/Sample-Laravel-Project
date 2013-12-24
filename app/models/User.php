@@ -65,6 +65,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 			$rules['email'] = 'required|unique:users,email|confirmed';
 			$rules['agree'] = 'required';
 		}
+		else
+		{
+			$rules['email'] = 'required|unique:users,email,'.Auth::user()->id;
+		}
 
 		if($withpassword)
 		{

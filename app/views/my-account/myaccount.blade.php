@@ -33,7 +33,8 @@
 								</li>
 								<li>
 									<label for="">Email</label>
-									<input type="text" name="email" value="{{ $personinfo->email }}" readonly style="background-color: #55ABA8;color: white"/>
+									<input type="text" name="email" value="{{ $personinfo->email }}" />
+									<!-- readonly style="background-color: #55ABA8;color: white" -->
 									<div class="clr"></div>
 									<span class="errorsmsg">{{ $errors->first('email') }}</span>
 								</li>

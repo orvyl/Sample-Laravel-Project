@@ -4,8 +4,7 @@ class FacebookController extends BaseController {
 
 	public $facebook;
 
-	public function __construct()
-	{
+	public function __construct() {
 		$this->facebook = new Facebook(Config::get('facebook'));
 	}
 
@@ -53,6 +52,8 @@ class FacebookController extends BaseController {
 							'description'=>'New account was created for '.Input::get('first_name').' '.Input::get('last_name').'[login with FACEBOOK]'
 						));
 					$h->save();
+
+					Mymodel::insert('payment-information',array('user_id'=>$u->id,'card_holder_fname'=>$user['first_name'],'card_holder_lname'=>$user['last_name']));
 					Auth::login($u);
 
 					return Redirect::to('my-account');

@@ -118,6 +118,11 @@
 			<a href="{{ URL::to('registry') }}">cancel</a>
 			<div class="clr"></div>
 		</div>
+		<div style="width: 270px; margin: auto;">
+			<a href="{{ URL::to('the-registry/fbshare?id='.$registry->id) }}" style="margin: auto;">
+				<img src="{{ URL::to('/') }}/images/fb/share.png" />
+			</a>
+		</div>
 	</div>
 </div>
 

@@ -80,4 +80,19 @@ class Mylibrary
 
 		return number_format((float)$num, 2, '.', '');
 	}
+
+	public static function fb_share($link = '',$pic = '',$name = '',$caption = '',$description = '',$goto_link = '')
+	{
+		$app = Config::get('facebook');
+
+		$link = $link;
+		$pic = $pic;
+		$name= urlencode($name);
+		$caption = urlencode($caption);
+		$description = urlencode($description);
+		$goto_link = $goto_link;
+		$app_num = $app['appId'];
+
+		return "https://www.facebook.com/dialog/feed?app_id={$app_num}&link={$link}&picture={$pic}&name={$name}&caption={$caption}&description={$description}&redirect_uri={$goto_link}";
+  	}
 }
