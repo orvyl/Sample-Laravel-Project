@@ -263,6 +263,10 @@ class CartController extends BaseController {
 
 		foreach ($products as $prod)
 		{
+			$did = explode('_', $prod->id);
+			if(count($did) == 2)
+				$this->addGC($did[1],$prod->qty);
+
 			$op = new OrderProd();
 			$op->order_id = $order_id;
 			$op->product_id_ref = $prod->id;
@@ -275,13 +279,15 @@ class CartController extends BaseController {
 		}
 	}
 
-	public function getTestcart() {
-		$products = Cart::content();
-
-		foreach ($products as $prod)
-		{
-			echo $prod->id.'<br/>';
+	public function addGC($id,$qty) {
+		for ($i=0; $i < $qty; $i++) { 
+			$gcc = new Gccode();
+			$gcc->user_id = Auth::user()->id;
+			$gcc->gc_id = $id;
+			$gcc->code = date('Ymd').'-'.Mylibrary::random_char(8).'-'.Auth::user()->id.$i;
+			$gcc->available = true;
+			
+			$gcc->save();
 		}
-		return;
 	}
 }

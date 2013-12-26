@@ -19,16 +19,20 @@
 							<th class="last-t-h">Status</th>
 						</tr>
 
+						@foreach($gcs as $gc)
+
 						<tr>
 							<td style="text-align: left">
-								<code>01-fhdhhuUGBJff487</code>
+								<code>{{ $gc->code }}</code>
 							</td>
 							<td>Gift Certificate Cute</td>
 							<td>$ 12.36</td>
-							<td>
+							<td style="text-align: left">
 								available
 							</td>
 						</tr>
+
+						@endforeach
 
 						<tr>
 							<td class="first-f-c">&nbsp;</td>

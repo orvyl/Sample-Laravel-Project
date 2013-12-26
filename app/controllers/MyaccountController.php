@@ -173,7 +173,8 @@ class MyaccountController extends BaseController {
 
 	public function giftcerts() {
 		return View::make('my-account.giftcerts')
-				->with('ptitle','Gift Certificates');
+				->with('ptitle','Gift Certificates')
+				->with('gcs',Gccode::getGcs(Auth::user()->id));
 	}
 
 }
