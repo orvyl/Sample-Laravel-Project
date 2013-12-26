@@ -110,6 +110,8 @@ Route::group(array('prefix'=>'my-account','before'=>'auth'), function(){
 	Route::get('registry', 'MyaccountController@registry');
 	Route::get('registry/{id}', 'MyaccountController@registrydetail');
 	Route::get('registry-gotosetup', 'MyaccountController@gotosetup');
+	
+	Route::get('giftcerts', 'MyaccountController@giftcerts');
 
 	Route::get('bye', 'MyaccountController@bye');
 });

@@ -171,4 +171,9 @@ class MyaccountController extends BaseController {
 		return Redirect::to('/');
 	}
 
+	public function giftcerts() {
+		return View::make('my-account.giftcerts')
+				->with('ptitle','Gift Certificates');
+	}
+
 }

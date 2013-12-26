@@ -275,80 +275,13 @@ class CartController extends BaseController {
 		}
 	}
 
-	public function getTestjson()
-	{
-		$data = json_decode('{
-				  "id": "PAY-34629814WL663112AKEE3AWQ",
-				  "create_time": "2013-01-30T23:44:26Z",
-				  "update_time": "2013-01-30T23:44:28Z",
-				  "state": "approved",
-				  "intent": "sale",
-				  "payer": {
-				    "payment_method": "paypal",
-				    "payer_info": {
-				      "email": "joeshopper@paypal.com",
-				      "first_name": "Joe",
-				      "last_name": "Shopper",
-				      "payer_id": "CR87QHB7JTRSC"
-				    }
-				  },
-				  "transactions": [
-				    {
-				      "amount": {
-				        "total": "7.47",
-				        "currency": "USD",
-				        "details": {
-				          "tax": "0.04",
-				          "shipping": "0.06"
-				        }
-				      },
-				      "description": "This is the payment transaction description.",
-				      "related_resources": [
-				        {
-				          "sale": {
-				            "id": "1KE4800207592173L",
-				            "create_time": "2013-01-30T23:44:26Z",
-				            "update_time": "2013-01-30T23:44:28Z",
-				            "state": "completed",
-				            "amount": {
-				              "total": "7.47",
-				              "currency": "USD"
-				            },
-				            "parent_payment": "PAY-34629814WL663112AKEE3AWQ",
-				            "links": [
-				              {
-				                "href": "https://api.sandbox.paypal.com/v1/payments/sale/1KE4800207592173L",
-				                "rel": "self",
-				                "method": "GET"
-				              },
-				              {
-				                "href": "https://api.sandbox.paypal.com/v1/payments/sale/1KE4800207592173L/refund",
-				                "rel": "refund",
-				                "method": "POST"
-				              },
-				              {
-				                "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-34629814WL663112AKEE3AWQ",
-				                "rel": "parent_payment",
-				                "method": "GET"
-				              }
-				            ]
-				          }
-				        }
-				      ]
-				    }
-				  ],
-				  "links": [
-				    {
-				      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-34629814WL663112AKEE3AWQ",
-				      "rel": "self",
-				      "method": "GET"
-				    }
-				  ]
-				}');
-		$payer_info = $data->payer->payer_info;
-		echo $payer_info->payer_id;
-		$amount = $data->transactions[0]->amount;
-		echo $amount->total;
+	public function getTestcart() {
+		$products = Cart::content();
+
+		foreach ($products as $prod)
+		{
+			echo $prod->id.'<br/>';
+		}
 		return;
 	}
 }

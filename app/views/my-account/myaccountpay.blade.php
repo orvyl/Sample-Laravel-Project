@@ -91,12 +91,12 @@ qaz;
 									</div>
 									<div class="clr"></div>
 								</li>
-								<li>
+								<!-- <li>
 									<label for="">Store Credit</label>
 									<input type="text" disabled value="$ {{ $paymentinfo->store_credit }}" style="background: #A9BEBE; color: #335251"/>
 									<div class="clr"></div>
 									<span class="errorsmsg">{{ $errors->first('card_number') }}</span>
-								</li>
+								</li> -->
 								<div class="my-acct-btn"><input type="submit" name="" value="save"/></div>
 							</ul>
 						</div>
