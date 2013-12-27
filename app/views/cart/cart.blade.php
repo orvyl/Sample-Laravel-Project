@@ -95,12 +95,24 @@
 						<p>Store Credit</p>
 						<label for="">($ {{ $store_credit }})</label>
 					</li>
+					<?php $tot = 0; ?>
+					@if(count($vouchers) > 0)
+						@foreach($vouchers as $v)
+
+						<li>
+							<p>Voucher</p>
+							<label for="">($ {{ Giftc::find($v)->price }})</label>
+						</li>
+						<?php $tot += Giftc::find($v)->price ?>
+						@endforeach
+					@endif
+
 					<li>
 						<div class="p-3-left-line"></div>
 					</li>
 					<li>
 						<p>Subtotal</p>
-						<label for=""><b>$ {{ $subtotal }}</b></label>
+						<label for=""><b>$ {{ $subtotal - $tot }}</b></label>
 					</li>
 					<li>
 						<div class="gift-btn">
@@ -114,19 +126,24 @@
 			</form>
 
 			<div class="cart-voucher fl">
-				<ul>
-					<li>
-						<label for="">Voucher Code</label>
-					</li>
-					<li>
-						<input type="text" name="" value=""/>
-					</li>
-					<li>
-						<div class="gift-btn">
-							<a href="">use voucher</a>
-						</div>
-					</li>
-				</ul>
+				<form method="post" action="{{ URL::to('cart/applygc') }}">
+					<ul>
+						<li>
+							<label for="">Voucher Code</label>
+						</li>
+						<li>
+							<input type="text" name="vouch" value=""/>
+						</li>
+						<li>
+							<div class="gift-btn">
+								<input type="submit" value="use voucher" style="border: none;" />
+							</div>
+						</li>
+					</ul>
+					@if(isset($_GET['vnf']))
+					<p style="text-align: center;">Voucher not found!</p>
+					@endif
+				</form>
 			</div>
 			
 			@endif

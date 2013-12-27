@@ -14,10 +14,26 @@
 			<div class="p-3-mid-inner-left fl">
 				<ul class="p-3-inner-left fl">
 					<li>Total =</li>
+					@if(count($vouchers) > 0)
+						@foreach($vouchers as $v)
+
+						<li>
+							Voucher
+						</li>
+						@endforeach
+					@endif
 					<li>Store Credit =</li>
 				</ul>
 				<ul class="p-3-inner-right fl">
 					<li>$ {{ Cart::total() }}</li>
+					<?php $tot = 0; ?>
+					@if(count($vouchers) > 0)
+						@foreach($vouchers as $v)
+
+						<li>($ {{ Giftc::find($v)->price }})</li>
+						<?php $tot += Giftc::find($v)->price ?>
+						@endforeach
+					@endif
 					<li>($ {{ $store_credit }})</li>
 				</ul>
 				<div class="clr"></div>
@@ -26,7 +42,7 @@
 		</div>
 		<div class="p-3-left-line"></div>
 		<div class="p-3-bottm-left">
-			<p>Order Total = <span>$ {{ $subtotal }}</span></p>
+			<p>Order Total = <span>$ {{ $subtotal - $tot }}</span></p>
 		</div>
 	</div>
 </div>

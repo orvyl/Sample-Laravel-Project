@@ -10,6 +10,7 @@ class CartController extends BaseController {
 				->with('ptitle','Cart')
 				->with('cart',Cart::content())
 				->with('store_credit',$store_credit)
+				->with('vouchers',Session::get('enteredVoucher'))
 				->with('subtotal',Mylibrary::getLessStoreCredit(Cart::total(), $store_credit));
 	}
 
@@ -81,6 +82,7 @@ class CartController extends BaseController {
 				->with('cart',Cart::content())
 				->with('paymentinfo',$paymentinfo)
 				->with('store_credit',$store_credit)
+				->with('vouchers',Session::get('enteredVoucher'))
 				->with('subtotal',Mylibrary::getLessStoreCredit(Cart::total(), $store_credit));
 	}
 
@@ -102,11 +104,21 @@ class CartController extends BaseController {
 
 		$store_credit = DB::table('payment-information')->where('user_id',Auth::user()->id)->pluck('store_credit');
 
+		$tot = Session::get('enteredVoucher');
+		$t = 0;
+
+		if(is_array($tot) && count($tot) > 0){
+			foreach ($tot as $val) {
+				$x = Giftc::find($val);
+				$t += $x->price;
+			}
+		}
+
 		switch (Input::get('type_card')) {
 			case 'paypal':
 
 				$pay = Paypal::acceptPaypal(array(
-						'total'=>Mylibrary::getLessStoreCredit(Cart::total(), $store_credit),
+						'total'=>(Mylibrary::getLessStoreCredit(Cart::total(), $store_credit)) - $t,
 						'return_url'=>URL::to('cart/returnpaypalpayment'),
 						'cancel_url'=>URL::to('cart/cancelpaypalpayment'),
 						'description'=>'This is for the payment for the cool items to be brought from Group Gifts!'
@@ -154,7 +166,7 @@ class CartController extends BaseController {
 							'expmonth'=>date('n', strtotime(Input::get('expmonth').'/1/2000')),
 							'expyear'=>Input::get('expyear'),
 							'cvv'=>Input::get('securitynumber'),
-							'total'=>Mylibrary::getLessStoreCredit(Cart::total(), $store_credit),
+							'total'=>(Mylibrary::getLessStoreCredit(Cart::total(), $store_credit)) - $t,
 							'description'=>'This is for the payment for the cool items to be brought from Group Gifts!'
 						));
 
@@ -289,5 +301,22 @@ class CartController extends BaseController {
 			
 			$gcc->save();
 		}
+	}
+
+	public function postApplygc() {
+		$c = Gccode::where('code',Input::get('vouch'))->where('user_id',Auth::user()->id)->first();
+		if(count($c) == 1){
+			$ids = is_array(Session::get('enteredVoucher')) ? Session::get('enteredVoucher'):array();
+			array_push($ids, $c->gc_id);
+			Session::put('enteredVoucher',$ids);
+			return Redirect::to('cart');
+		}
+		return Redirect::to('cart?vnf');
+	}
+
+	public function getYe() {
+		echo '<pre>';
+		print_r(Session::get('enteredVoucher'));
+		return;
 	}
 }
