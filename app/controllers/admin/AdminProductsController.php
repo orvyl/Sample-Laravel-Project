@@ -230,7 +230,8 @@ class AdminProductsController extends BaseController {
 				->with('product_recipient',$product_recipient)
 				->with('product_location',$product_location)
 				->with('product_occs',$product_occs)
-				->with('maincat',OccType::all());
+				->with('maincat',OccType::all())
+				->with('url',URL::to('admin/extra/delproimage'));
 	}
 
 	/**

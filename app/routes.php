@@ -201,5 +201,8 @@ Route::group(array('prefix'=>'admin','before'=>'admin-auth'), function(){
 	/*Orders*/
 	Route::controller('orders','AdminOrdersController');	
 
+	/*Extra*/
+	Route::controller('extra','AdminExtraController');
+
 });
 /*end:ADMIN PORTAL*/

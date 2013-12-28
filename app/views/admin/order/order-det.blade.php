@@ -97,6 +97,11 @@
 
 @section('subnav')
 
-	@include('admin.registry.rsubnav')
+	<li {{ Request::segment(2) == 'registry' ? 'class="activeli"':'' }}>
+        <a href="{{ URL::to('admin/orders') }}" title="" {{ Request::segment(2) == 'orders' ? 'class="this"':'' }}>
+            <span class="icos-pencil"></span>
+            Manage Orders
+        </a>
+    </li>
 
 @endsection

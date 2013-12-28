@@ -24,7 +24,7 @@
 							<td>{{ $order->paypaltrans_id }}</td>
 							<td>{{ $order->created_at }}</td>
 							<td>$ {{ $order->total }}</td>
-							<td>
+							<td style="text-align: left">
 								<a href="{{ URL::to('my-account/order-detail/'.$order->id) }}" class="view-det-order">view details</a>
 							</td>
 						</tr>

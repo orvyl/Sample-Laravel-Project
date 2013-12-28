@@ -141,7 +141,7 @@
                                 <a href="{{ URL::to('/') }}/uploads/products/{{ $img->image }}" title="" class="lightbox">
                                     <img src="{{ URL::to('/') }}/uploads/products/smallthumb_{{ $img->image }}" alt="" />
                                 </a>
-                                <span><a href="" style="display: inline-block">Delete</a></span> | <span><a href="" style="display: inline-block">Primary</a></span>
+                                <span><a href="#" url="{{ $url }}?id={{ $img->pi_id }}&pid={{ $img->product_id }}" class="delssimg" style="display: inline-block">Delete</a></span> | <span><a href="" style="display: inline-block">Primary</a></span>
                             </li>
                             @endforeach
                         </ul>
@@ -174,6 +174,14 @@ $(document).ready(function() {
     $('.upl').change(function(){
         var n = $("input:file")[0].files.length;
         $('.num-file').text(n+' file(s)');
+    });
+
+    $('.delssimg').click(function(){
+        var a = confirm("Are you sure you want to delete this image?");
+        var url = $(this).attr('url');
+
+        if(a)
+            window.location.href = url;
     });
 });
 </script>
