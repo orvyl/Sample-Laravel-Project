@@ -157,7 +157,7 @@
 			        <th>Payer ID</th>
 			        <th>Date</th>
 			        <th>Amount</th>
-			        <th>Action</th>
+			        <!-- <th>Action</th> -->
 		        </tr>
 	        </thead>
 	        <tbody>
@@ -177,9 +177,9 @@
 				        <td class="center">
 				        	$ {{ $cont->contribution }}
 				        </td>
-				        <td class="tableActs">
+				       <!--  <td class="tableActs">
 	                        <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
-	                    </td>
+	                    </td> -->
 			        </tr>
                 @endforeach
 	        </tbody>
