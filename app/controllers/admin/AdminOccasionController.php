@@ -181,4 +181,10 @@ class AdminOccasionController extends BaseController {
 
 		return 1;
 	}
+
+	public function getDelocc() {
+		$n = Occasion::find(Input::get('id'));
+		$n->delete();
+		return Redirect::to('admin/occasions?otype='.Input::get('ot'));
+	}
 }

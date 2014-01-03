@@ -33,9 +33,8 @@
 					        	{{ $row->created_at }}
 					        </td>
 					        <td class="tableActs">
-					        	<a href="#" class="tablectrl_small bDefault tipS" title="Setting"><span class="iconb" data-icon="&#xe1f7;"></span></a>
-		                        <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
-		                    </td>
+					        	<!-- <a href="#" class="tablectrl_small bDefault tipS" title="Setting"><span class="iconb" data-icon="&#xe1f7;"></span></a> -->
+		                        <a href="#" class="tablectrl_small bDefault tipS delss" uid="{{ $row->id }}" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>		                    </td>
 				        </tr>
 			        @endforeach
 
@@ -49,8 +48,18 @@
     <div class="clear"></div> 
 </div>
 <div class="btns">
-	<a href="#" class="buttonL bRed">Delete selected</a>
+	<!-- <a href="#" class="buttonL bRed">Delete selected</a> -->
 </div>
+
+<script type="text/javascript">
+	$('.delss').click(function(){
+		var a = confirm("Are you sure you want to delete this account?");
+		var id = $(this).attr('uid');
+
+		if(a)
+			window.location.href = "{{ URL::to('admin/users/delsuper') }}?uid="+id;
+	});
+</script>
 
 @endsection
 

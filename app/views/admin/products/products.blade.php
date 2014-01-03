@@ -47,7 +47,7 @@
 						        </td>
 						        <td class="tableActs">
 						        	<a href="{{ URL::to('admin/products/'.$row->id.'/edit') }}" class="tablectrl_small bDefault tipS" title="Setting"><span class="iconb" data-icon="&#xe1f7;"></span></a>
-			                        <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+			                        <!-- <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a> -->
 			                    </td>
 					        </tr>
 				        @endforeach

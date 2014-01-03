@@ -37,7 +37,7 @@
 				        	{{ $row->created_at }}
 				        </td>
 				        <td class="tableActs">
-	                        <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
+	                        <a href="#" class="tablectrl_small bDefault tipS delss" ot="{{ $occtid }}" oid="{{ $row->id }}" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
 	                    </td>
 			        </tr>
 		        @endforeach
@@ -49,7 +49,7 @@
     <div class="clear"></div> 
 </div>
 <div class="btns">
-	<a href="#" class="buttonL bRed" >Delete selected</a>
+	<!-- <a href="#" class="buttonL bRed" >Delete selected</a> -->
 	<a href="#" class="buttonL bGreen updorder1">Update order</a>
     <a href="#" class="buttonL bGreen" id="formDialog1_open">Add occasion here</a>
 </div>
@@ -62,6 +62,17 @@
         <input type="text" name="occname" occt = "{{ $occtid }}" class="clear" placeholder="Entere new occasion" required/>
     </form>
 </div>
+
+<script type="text/javascript">
+	$('.delss').click(function(){
+		var id = $(this).attr('oid');
+		var ot = $(this).attr('ot');
+		var a = confirm("Are you sure you want to delete?");
+
+		if(a)
+			window.location.href="{{ URL::to('admin/occasions/delocc') }}?id="+id+"&ot="+ot;
+	});
+</script>
 
 @endsection
 

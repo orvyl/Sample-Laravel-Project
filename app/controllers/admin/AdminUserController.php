@@ -78,7 +78,7 @@ class AdminUserController extends BaseController
 
 		return View::make('admin.user.editsuper')
 				->with('ptitle','Edit Adminstrator Account')
-				->with('admin',$u);
+				->with('user',$u);
 	}
 
 	public function getNewsletter()
@@ -119,5 +119,15 @@ class AdminUserController extends BaseController
 		}
 
 		return Redirect::to('admin/users/newsletter?sendsuc');
+	}
+
+	public function getDelsuper() {
+		$n = User::find(Input::get('uid'));
+		if($n->email != 'sa@user.admin')
+			$n->delete();
+		$t = "superusers";
+		if($n->usertype != 'admin')
+			$t = "";
+		return Redirect::to('admin/users/'.$t);
 	}
 }
