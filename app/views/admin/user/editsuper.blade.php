@@ -15,7 +15,7 @@
             {{ $message }}
         @endforeach
         <div class="body">
-        	<form method="post" action="#" id="frmnewadmin">
+        	<form method="post" action="{{ URL::to('admin/users/edsuper/'.Request::segment(4)) }}" id="frmnewadmin">
         		<div class="formRow">
                     <div class="grid3"><label>Username:</label></div>
                     <div class="grid9"><input type="text" name="username" value="{{ $user->username }}"class="required"/></div>

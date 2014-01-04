@@ -11,7 +11,7 @@
 	        <table cellpadding="0" cellspacing="0" border="0" class="dTable" id="dynamic">
 		        <thead>
 			        <tr>
-				        <th>&nbsp;</th>
+				        <!-- <th>&nbsp;</th> -->
 				        <th>Name</th>
 				        <th>Email</th>
 				        <th>Date Registered</th>
@@ -22,9 +22,9 @@
 
 		        	@foreach($clients as $row)
 				        <tr class="gradeA">
-					        <td class="center">
+					        <!-- <td class="center">
 					        	<input type="checkbox" />
-					        </td>
+					        </td> -->
 					        <td class="center">{{ $row->first_name }} {{ $row->last_name }}</td>
 					        <td class="center">
 					        	<a href="mailto:{{ $row->email }}">{{ $row->email }}</a>

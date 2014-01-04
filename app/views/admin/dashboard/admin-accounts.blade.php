@@ -8,7 +8,7 @@
                 <td ><div>Username</div></td>
                 <td ><div>Email</div></td>
                 <td width="130" ><div>Last Session</div></td>
-                <td width="100">Actions</td>
+                <!-- <td width="100">Actions</td> -->
             </tr>
         </thead>
         <tbody>
@@ -18,10 +18,10 @@
                     <td style="padding: 5px;">{{ $row->username }}</td>
                     <td class="textL"><a href="mailto:{{ $row->email }}" title="">{{ $row->email }}</a></td>
                     <td>{{ $row->updated_at }}</td>
-                    <td class="tableActs">
+                    <!-- <td class="tableActs">
                         <a href="#" class="tablectrl_small bDefault tipS" title="Remove"><span class="iconb" data-icon="&#xe136;"></span></a>
                         <a href="#" class="tablectrl_small bDefault tipS" title="Setting"><span class="iconb" data-icon="&#xe1f7;"></span></a>
-                    </td>
+                    </td> -->
                 </tr>
             @endforeach
 

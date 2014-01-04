@@ -90,7 +90,7 @@
 </div>
 
 <div class="btns">
-	<a href="#" class="buttonL bRed">Delete order</a>
+	<!-- <a href="#" class="buttonL bRed">Delete order</a> -->
 </div>
 
 @endsection

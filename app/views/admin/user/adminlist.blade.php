@@ -10,7 +10,7 @@
         <table cellpadding="0" cellspacing="0" border="0" class="dTable" id="dynamic">
 	        <thead>
 		        <tr>
-			        <th>&nbsp;</th>
+			        <!-- <th>&nbsp;</th> -->
 			        <th>Username</th>
 			        <th>Type</th>
 			        <th>Username/Email</th>
@@ -21,9 +21,9 @@
 	        <tbody>
 	        	@foreach($admins as $row)
 		        <tr class="gradeA">
-			        <td class="center">
+			        <!-- <td class="center">
 			        	<input type="checkbox" />
-			        </td>
+			        </td> -->
 			        <td class="center">{{ $row->username }}</td>
 			        <td class="center">
 			        	{{ $row->usertype }}

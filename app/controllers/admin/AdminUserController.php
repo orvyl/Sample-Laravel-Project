@@ -81,6 +81,66 @@ class AdminUserController extends BaseController
 				->with('user',$u);
 	}
 
+	public function postEdsuper($id) {
+		$v = Validator::make(Input::all(), array(
+				'username'=>'required',
+				'first_name'=>'required',
+				'last_name'=>'required',
+			), array(
+				'username.required'=>'Username is required',
+				'first_name.required'=>'First name is required',
+				'last_name.required'=>'Last name is required'
+			));
+
+		if($v->fails()) {
+			Input::flash();
+			return Redirect::to('admin/users/editsuper/'.$id)
+					->withErrors($adminval);
+		} else {
+
+			$msg = 'ERROR: Something went wrong. Please try again later.';
+			$res = 'nFailure';
+
+			$u = User::find($id);
+			$u->username = Input::get('username');
+			$u->first_name = Input::get('first_name');
+			$u->last_name = Input::get('last_name');
+
+			if(Input::get('oldpassword') != '' && Hash::check(Input::get('oldpassword'), $u->password)) {
+				$vv = Validator::make(Input::all(), array(
+						'password'=>'required|confirmed'
+					), array(
+						'password.required'=>'Please fill up New Password and Confirm Password',
+						'password.confirmed'=>'Password mismatch'
+					));
+				if($vv->fails()) {
+					Input::flash();
+					return Redirect::to('admin/users/editsuper/'.$id)
+						->withErrors($adminval);
+				} else {
+					$u->password = Hash::make(Input::get('password'));
+				}
+			}
+
+			if($u->save())
+			{
+				$h = new History();
+				$h->fill(array(
+						'title'=>'Admin Updated',
+						'description'=>'Username: '.Input::get('username').' '.Input::get('last_name').'<br/>Email: '.Input::get('email')
+					));
+				$h->save();
+
+				$msg = 'New Administrator account successfully updated!';
+				$res = 'nSuccess';
+			}
+
+			Session::flash('regadmin',$res);
+			Session::flash('addmsg',$msg);
+			return Redirect::to('admin/users/editsuper/'.$id);
+		}
+	}
+
 	public function getNewsletter()
 	{
 		return View::make('admin.user.newsletter')

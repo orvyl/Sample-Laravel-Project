@@ -86,7 +86,7 @@ class Registry extends Eloquent {
 	public static function addressFormat($registry)
 	{
 		$add = $registry->postcode.' '.$registry->address.' ';
-		$add .= DB::table('state')->where('state_id',$registry->id)->pluck('state').' ';
+		$add .= DB::table('state')->where('state_id',$registry->state_id)->pluck('state').' ';
 		$add .= DB::table('country')->where('country_id',$registry->id)->pluck('country').' ';
 		$add .= $registry->suburb != '' ? '(suburb: '.$registry->suburb.')':'';
 		return $add;

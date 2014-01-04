@@ -13,6 +13,7 @@
 				<h3>{{ $blog->title }}</h3>
 				<p><span>Posted {{ date('M d Y',strtotime($blog->created_at)) }} by Admin</span></p>
 				<div class="blog-pic-holder"><img src="{{ URL::to('/') }}/uploads/blogs/{{ Blog::getImage($blog->image,'pres') }}" width="421" height="258" alt="" title=""/></div>
+				<br/>
 				{{ $blog->content }}
 			</div>
 		</div>
